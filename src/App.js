@@ -4,8 +4,9 @@ import FeatureFlagGlobalState from "./components/feature-flag/context";
 function App() {
   return (
     <div className="App">
-      <FeatureFlags />
-      <FeatureFlagGlobalState />
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
